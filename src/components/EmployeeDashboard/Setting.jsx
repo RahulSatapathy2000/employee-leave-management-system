@@ -27,7 +27,7 @@ const Setting = () => {
     } else {
       try {
         const response = await axios.put(
-          "https://employee-lms-backend-snowy.vercel.app/api/setting/change-password",
+          "https://employee-lms-backend-coral.vercel.app/api/setting/change-password",
           setting,
           {
             headers: {

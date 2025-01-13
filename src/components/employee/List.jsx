@@ -14,7 +14,7 @@ const List = () => {
       setEmpLoading(true);
       try {
         const responnse = await axios.get(
-          "https://employee-lms-backend-snowy.vercel.app/api/employee",
+          "https://employee-lms-backend-coral.vercel.app/api/employee",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -33,7 +33,7 @@ const List = () => {
               <img
                 width={40}
                 className="rounded-full"
-                src={`https://employee-lms-backend-snowy.vercel.app/${emp.userId.profileImage}`}
+                src={`https://employee-lms-backend-coral.vercel.app/${emp.userId.profileImage}`}
               />
             ),
             action: <EmployeeButtons Id={emp._id} />,

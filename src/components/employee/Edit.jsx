@@ -26,7 +26,7 @@ const Edit = () => {
     const fetchEmployee = async () => {
       try {
         const responnse = await axios.get(
-          `https://employee-lms-backend-snowy.vercel.app/api/employee/${id}`,
+          `https://employee-lms-backend-coral.vercel.app/api/employee/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -63,7 +63,7 @@ const Edit = () => {
 
     try {
       const response = await axios.put(
-        `https://employee-lms-backend-snowy.vercel.app/api/employee/${id}`,
+        `https://employee-lms-backend-coral.vercel.app/api/employee/${id}`,
         employee,
         {
           headers: {

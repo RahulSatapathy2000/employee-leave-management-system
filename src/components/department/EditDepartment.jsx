@@ -13,7 +13,7 @@ const EditDepartment = () => {
       setDepLoading(true);
       try {
         const responnse = await axios.get(
-          `https://employee-lms-backend-snowy.vercel.app/api/department/${id}`,
+          `https://employee-lms-backend-coral.vercel.app/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -44,7 +44,7 @@ const EditDepartment = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `https://employee-lms-backend-snowy.vercel.app/api/department/${id}`,
+        `https://employee-lms-backend-coral.vercel.app/api/department/${id}`,
         department,
         {
           headers: {

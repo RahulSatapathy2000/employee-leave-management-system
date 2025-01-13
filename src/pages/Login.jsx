@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://employee-lms-backend-snowy.vercel.app/api/auth/login",
+        "https://employee-lms-backend-coral.vercel.app/api/auth/login",
         { email, password }
       );
       if (response.data.success) {
