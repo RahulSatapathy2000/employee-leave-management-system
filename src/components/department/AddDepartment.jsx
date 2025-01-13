@@ -18,7 +18,7 @@ const AddDepartment = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/department/add",
+        "https://employee-lms-backend-snowy.vercel.app/api/department/add",
         department,
         {
           headers: {
